@@ -59,6 +59,10 @@ finally:
     release_conn(conn)
 
 return render_template("indexes.html",
+unused=unused,
+                       all_indexes=all_indexes,
+                       missing=missing)
+                       
 
 Step 2 — Create indexes.html
 nano ~/flask_dashboard/templates/indexes.html
@@ -75,6 +79,4 @@ Step 4 — Add navigation links in index.html Find your topbar links section and
 
 Step 5 — Run and test python3 app.py
 
-                       unused=unused,
-                       all_indexes=all_indexes,
-                       missing=missing)
+                       
